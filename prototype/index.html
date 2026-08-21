@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أعلام — نموذج تفاعلي للتحسينات</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans Arabic",sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+h1{font-size:28px;font-weight:700;margin-bottom:8px;color:#fff}
+.sub{color:#94a3b8;margin-bottom:40px;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:700px;width:100%}
+.card{background:#1e293b;border:2px solid #334155;border-radius:16px;padding:32px;text-align:center;text-decoration:none;color:#e2e8f0;transition:.2s}
+.card:hover{border-color:#16a34a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,163,74,.15)}
+.card h2{font-size:20px;font-weight:700;margin-bottom:8px}
+.card p{color:#94a3b8;font-size:13px;line-height:1.7}
+.card.before{border-color:#475569}
+.card.before:hover{border-color:#ef4444;box-shadow:0 8px 24px rgba(239,68,68,.1)}
+.badge{display:inline-block;padding:4px 14px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:16px}
+.badge.b{background:#1e293b;border:1px solid #ef4444;color:#ef4444}
+.badge.a{background:#052e16;border:1px solid #16a34a;color:#22c55e}
+.pages{color:#64748b;font-size:12px;margin-top:32px}
+</style>
+</head>
+<body>
+<h1>أعلام — نموذج تفاعلي</h1>
+<p class="sub">اضغط على أحد الخيارين لتصفح لوحة التحكم كاملة</p>
+<div class="grid">
+  <a href="before/01-dashboard.html" class="card before">
+    <span class="badge b">قبل التحسين</span>
+    <h2>الوضع الحالي</h2>
+    <p>لوحة التحكم كما هي حالياً — بدون أي تعديلات. كل الصفحات متصلة ببعضها عبر القائمة الجانبية.</p>
+  </a>
+  <a href="after/01-dashboard.html" class="card after">
+    <span class="badge a">بعد التحسين</span>
+    <h2>بعد تطبيق CSS</h2>
+    <p>نفس الصفحات مع تطبيق ملف التنسيق المحسّن — ألوان، إخفاء عناصر، تحسين خطوط وأزرار.</p>
+  </a>
+</div>
+<p class="pages">٤٨ صفحة × نسختين = ٩٦ صفحة قابلة للتصفح</p>
+</body>
+</html>

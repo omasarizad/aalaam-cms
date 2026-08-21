@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aalaam CMS — UX Improvements</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans Arabic",sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:40px 20px}
+h1{font-size:28px;font-weight:700;margin-bottom:8px;color:#fff}
+.sub{color:#94a3b8;margin-bottom:40px;font-size:15px;text-align:center}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:800px;width:100%;margin-bottom:32px}
+.card{background:#1e293b;border:2px solid #334155;border-radius:16px;padding:28px;text-align:center;text-decoration:none;color:#e2e8f0;transition:.2s}
+.card:hover{border-color:#16a34a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,163,74,.15)}
+.card h2{font-size:18px;font-weight:700;margin-bottom:8px}
+.card p{color:#94a3b8;font-size:13px;line-height:1.7}
+.badge{display:inline-block;padding:4px 14px;border-radius:100px;font-size:11px;font-weight:600;margin-bottom:14px}
+.badge.proto{background:#052e16;border:1px solid #16a34a;color:#22c55e}
+.badge.audit{background:#1e1b4b;border:1px solid #6366f1;color:#818cf8}
+.section-title{color:#64748b;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;margin-top:20px;max-width:800px;width:100%;text-align:right}
+.files{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;max-width:800px;width:100%}
+.file-card{background:#1e293b;border:1px solid #334155;border-radius:10px;padding:16px;text-decoration:none;color:#e2e8f0;transition:.2s;text-align:center}
+.file-card:hover{border-color:#16a34a}
+.file-card .name{font-size:13px;font-weight:600}
+.file-card .ext{color:#64748b;font-size:11px;margin-top:4px}
+</style>
+</head>
+<body>
+<h1>Aalaam CMS</h1>
+<p class="sub">تحسينات تجربة المستخدم للوحة التحكم</p>
+<div class="grid">
+  <a href="prototype/index.html" class="card">
+    <span class="badge proto">نموذج تفاعلي</span>
+    <h2>قبل وبعد التحسين</h2>
+    <p>٤٨ صفحة من لوحة التحكم — نسخة أصلية ونسخة محسّنة. تصفح وقارن.</p>
+  </a>
+  <a href="audit/index.html" class="card">
+    <span class="badge audit">تقرير UX</span>
+    <h2>تقرير التحسينات</h2>
+    <p>تحليل مفصّل مع لقطات شاشة ومقارنات بصرية لكل قسم.</p>
+  </a>
+</div>
+<div class="section-title">ملفات المشروع</div>
+<div class="files">
+  <a href="muslimat-admin-override.css" target="_blank" class="file-card">
+    <div class="name">Override CSS</div>
+    <div class="ext">.css — ملف التنسيق</div>
+  </a>
+  <a href="muslimat-functions.txt" target="_blank" class="file-card">
+    <div class="name">Functions PHP</div>
+    <div class="ext">.txt — دوال PHP</div>
+  </a>
+  <a href="muslimat-ux-audit.md" target="_blank" class="file-card">
+    <div class="name">UX Audit</div>
+    <div class="ext">.md — التقرير المكتوب</div>
+  </a>
+</div>
+</body>
+</html>
