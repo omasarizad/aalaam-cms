@@ -53,6 +53,16 @@
     .footer a:hover { text-decoration: underline; }
     a { color: #2563eb; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .fig {
+      margin: 20px 0; text-align: center;
+    }
+    .fig img {
+      max-width: 100%; border-radius: 8px;
+      border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .fig figcaption {
+      font-size: 13px; color: #64748b; margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -80,9 +90,19 @@
     </ol>
   </div>
 
+  <figure class="fig">
+    <img src="https://en.support.wordpress.com/wp-content/uploads/2024/10/excerpt-1.png" alt="حقل المقتطف في الشريط الجانبي">
+    <figcaption>حقل المقتطف في الشريط الجانبي لمحرر ووردبريس</figcaption>
+  </figure>
+
   <div class="tip">
-    <strong>ملاحظة:</strong> إذا لم يظهر حقل المقتطف، فعّله من <strong>خيارات الشاشة</strong> أعلى صفحة التحرير.
+    <strong>ملاحظة:</strong> إذا لم يظهر حقل المقتطف، انقر على أيقونة الإعدادات أعلى يسار المحرر لفتح الشريط الجانبي.
   </div>
+
+  <figure class="fig">
+    <img src="https://en.support.wordpress.com/wp-content/uploads/2025/03/block-sidebar-settings-icon.jpg" alt="أيقونة الإعدادات في المحرر" style="max-width: 360px;">
+    <figcaption>أيقونة الإعدادات في أعلى يسار المحرر</figcaption>
+  </figure>
 
   <h2>نصائح لكتابة مقتطف جيد</h2>
   <ul>
@@ -102,6 +122,16 @@
     <li><strong>خلاصات RSS:</strong> القرّاء عبر تطبيقات RSS يرون المقتطف أولاً.</li>
   </ul>
 
+  <figure class="fig">
+    <img src="https://en.support.wordpress.com/wp-content/uploads/2023/05/wordpress-post-excerpt-example.jpeg" alt="مثال على المقتطف في الصفحة الرئيسية">
+    <figcaption>المقتطف كما يظهر تحت المنشور في الصفحة الرئيسية</figcaption>
+  </figure>
+
+  <figure class="fig">
+    <img src="https://en.support.wordpress.com/wp-content/uploads/2023/05/excerpt-in-google.png" alt="المقتطف في نتائج بحث Google">
+    <figcaption>المقتطف كوصف تعريفي في نتائج بحث Google</figcaption>
+  </figure>
+
   <h2>السلوك الافتراضي</h2>
   <p>
     إذا تركت حقل المقتطف فارغاً، يقوم ووردبريس تلقائياً بقصّ أول <strong>55 كلمة</strong> من محتوى المنشور واستخدامها كمقتطف. يُزال أي تنسيق HTML من النص المقصوص ويُضاف علامة <code>[…]</code> في النهاية.
@@ -116,10 +146,25 @@
     في المحرر الكلاسيكي، يمكنك استخدام وسوم HTML الأساسية في حقل المقتطف مثل <code>&lt;strong&gt;</code> و<code>&lt;em&gt;</code> و<code>&lt;a&gt;</code> لتنسيق النص أو إضافة روابط. القالب هو من يحدد ما إذا كانت هذه الوسوم تُعرض أم تُزال.
   </p>
 
+  <figure class="fig">
+    <img src="https://en-support.files.wordpress.com/2019/03/excerpt-html-added.png" alt="وسوم HTML في حقل المقتطف">
+    <figcaption>استخدام وسوم HTML في حقل المقتطف (عرض الكود)</figcaption>
+  </figure>
+
+  <figure class="fig">
+    <img src="https://en-support.files.wordpress.com/2019/03/excerpt-basic-html.png" alt="المقتطف بتنسيق HTML كما يظهر للزوار">
+    <figcaption>المقتطف بتنسيق HTML كما يظهر للزوار في الموقع</figcaption>
+  </figure>
+
   <h2>إضافة رابط "اقرأ المزيد"</h2>
   <p>
     يمكنك إضافة فاصل <strong>اقرأ المزيد</strong> داخل المحتوى عبر المحرر. هذا الفاصل يحدد أين ينتهي المقتطف التلقائي في الصفحة الرئيسية وصفحات الأرشيف، ويضيف رابطاً للقارئ لمتابعة القراءة.
   </p>
+
+  <figure class="fig">
+    <img src="https://en.support.wordpress.com/wp-content/uploads/2026/04/excerpt-block-add-read-more.jpg" alt="فاصل اقرأ المزيد في المحرر">
+    <figcaption>إضافة فاصل "اقرأ المزيد" داخل بلوك المقتطف</figcaption>
+  </figure>
 
   <h2>تنسيق المقتطف في قوالب البلوكات</h2>
   <p>
